@@ -1,0 +1,55 @@
+# ==============================================================================
+# CISC 121 - Gesture Recognition App
+# Required Python Packages
+# ==============================================================================
+#
+# HOW TO INSTALL:
+#   Open your terminal and run:
+#   pip install -r requirements.txt
+#
+# WHAT IS THIS FILE?
+#   This file lists all the external libraries (packages) our project needs.
+#   Python's package manager (pip) reads this file and installs everything.
+#
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# CORE PACKAGES
+# ------------------------------------------------------------------------------
+
+# Gradio - Creates web interfaces for Python apps
+# Website: https://gradio.app
+# We use it to build the camera input and results display
+gradio>=4.0.0
+
+# Transformers - Hugging Face's AI/ML library
+# Website: https://huggingface.co/transformers
+# We use it to access pre-trained image classification models
+transformers>=4.30.0
+
+# ------------------------------------------------------------------------------
+# IMAGE PROCESSING
+# ------------------------------------------------------------------------------
+
+# Pillow - Python Imaging Library
+# Used for loading and processing images
+Pillow>=9.0.0
+
+# ------------------------------------------------------------------------------
+# MACHINE LEARNING BACKEND
+# ------------------------------------------------------------------------------
+
+# PyTorch - Deep learning framework
+# Required by transformers to run the AI models
+# Note: This is a large package (~2GB) - installation may take a few minutes
+torch>=2.0.0
+
+# ------------------------------------------------------------------------------
+# OPTIONAL (for development)
+# ------------------------------------------------------------------------------
+
+# Uncomment these if you want additional development tools:
+
+# pytest          # For running tests
+# black           # For code formatting
+# flake8          # For code style checking
