@@ -1,9 +1,9 @@
 # 🎓 Queen's University CISC 121 - Gesture Recognition App
 
 <!-- Queen's University Banner -->
-<p align="center">
+<!-- <p align="center">
   <img src="https://www.queensu.ca/sites/default/files/assets/pages/queens-logo-red.png" alt="Queen's University Logo" width="300"/>
-</p>
+</p> -->
 
 <p align="center">
   <strong>School of Computing | CISC 121 - Introduction to Computing Science</strong>
