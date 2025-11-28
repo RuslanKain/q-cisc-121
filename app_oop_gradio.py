@@ -901,8 +901,12 @@ def main():
     """Create and launch the Gradio app."""
     app = GradioApp()
     demo = app.create_ui()
-    demo.launch(share=False)
+    demo.launch(share=False, ssr_mode=False)
 
 
 if __name__ == "__main__":
     main()
+
+# For HuggingFace Spaces compatibility (expects a 'demo' variable)
+app = GradioApp()
+demo = app.create_ui()
