@@ -20,7 +20,8 @@
 # Gradio - Creates web interfaces for Python apps
 # Website: https://gradio.app
 # We use it to build the camera input and results display
-gradio>=4.0.0
+# Note: Version 4.44.0+ has stable theme support
+gradio>=4.44.0
 
 # Transformers - Hugging Face's AI/ML library
 # Website: https://huggingface.co/transformers
