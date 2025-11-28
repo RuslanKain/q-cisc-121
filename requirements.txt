@@ -1,5 +1,5 @@
 # ==============================================================================
-# CISC 121 - Gesture Recognition App
+# CISC 121 - Gesture Recognition & Sorting Visualization App
 # Required Python Packages
 # ==============================================================================
 #
@@ -11,6 +11,10 @@
 #   This file lists all the external libraries (packages) our project needs.
 #   Python's package manager (pip) reads this file and installs everything.
 #
+# HUGGING FACE SPACES:
+#   This file is automatically read when deploying to HF Spaces.
+#   Just push your repo and it will install these packages.
+#
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
@@ -20,7 +24,6 @@
 # Gradio - Creates web interfaces for Python apps
 # Website: https://gradio.app
 # We use it to build the camera input and results display
-# Note: Version 4.44.0+ has stable theme support
 gradio>=4.44.0
 
 # Transformers - Hugging Face's AI/ML library
@@ -43,7 +46,12 @@ Pillow>=9.0.0
 # PyTorch - Deep learning framework
 # Required by transformers to run the AI models
 # Note: This is a large package (~2GB) - installation may take a few minutes
+# For HuggingFace Spaces, this is pre-installed
 torch>=2.0.0
+
+# Timm - PyTorch Image Models
+# Required by some vision models in transformers
+timm>=0.9.0
 
 # ------------------------------------------------------------------------------
 # OPTIONAL (for development)
