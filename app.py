@@ -339,10 +339,19 @@ def create_app():
     """
     
     # Create the app container
-    with gr.Blocks(
-        title="CISC 121 Gesture App",  # Browser tab title
-        theme=gr.themes.Soft()          # A nice, modern look
-    ) as app:
+    # Note: We use try/except for theme to support different Gradio versions
+    # Older versions don't support the theme parameter the same way
+    try:
+        # Try modern Gradio syntax (4.x+)
+        app = gr.Blocks(
+            title="CISC 121 Gesture App",  # Browser tab title
+            theme=gr.themes.Soft()          # A nice, modern look
+        )
+    except TypeError:
+        # Fall back for older Gradio versions
+        app = gr.Blocks(title="CISC 121 Gesture App")
+    
+    with app:
         
         # ----------------------------------------------------------------------
         # PART A: HEADER SECTION
