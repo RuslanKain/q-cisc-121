@@ -396,8 +396,8 @@ def create_app():
                             label="Click the 📷 button below the preview to capture",
                             sources=["webcam"],
                             type="pil",
-                            height=250,
-                            mirror_webcam=True
+                            height=250
+                            # Note: mirror_webcam removed for compatibility with older Gradio
                         )
                 
                 # Status indicator - shows when image is ready
