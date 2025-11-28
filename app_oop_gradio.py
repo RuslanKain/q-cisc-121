@@ -531,12 +531,18 @@ class GradioApp:
         own responsibility. The final result is a complete interface.
         """
         
+        # Create theme - handle older Gradio versions gracefully
+        try:
+            theme = gr.themes.Soft(
+                primary_hue="blue",
+                secondary_hue="gray",
+            )
+        except Exception:
+            theme = "soft"  # Fallback for older versions
+        
         with gr.Blocks(
             title="CISC 121 - OOP Sorting Visualizer",
-            theme=gr.themes.Soft(
-                primary_hue="blue",
-                secondary_hue="red",
-            )
+            theme=theme
         ) as demo:
             
             # Header
